@@ -24,7 +24,36 @@ int main()
         printf("Coloque el numero de opcion\n");
         scanf("%d", &opcion);
 
+        switch (opcion)
+        {
+        case 1:
+            
+            {
+                printf("\nDatos del estudiante %d:\n", estudiantes + 1);
+
+                printf("Ingrese la matricula: ");
+                scanf("%d", &alumnos[estudiantes].matricula);
+
+                printf("Ingrese el nombre: ");
+                gets(alumnos[estudiantes].nombre);
+
+                printf("Ingrese la direccion: ");
+                gets(alumnos[estudiantes].direccion);
+
+                printf("Ingrese la materia: ");
+                gets(alumnos[estudiantes].materia);
+
+                printf("Ingrese la nota: ");
+                scanf("%f", &alumnos[estudiantes].nota);
+
+                estudiantes++;
+
+                printf("Estudiante ingresado exitosamente.\n");
+            }
         
+
+      
+        }
     } while (opcion != 3);
 
     return 0;
