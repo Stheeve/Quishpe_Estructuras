@@ -56,6 +56,25 @@ int main()
             }
             break;
 
+        case 2:
+            printf("\nDatos de todos los alumnos:\n");
+            for (int i = 0; i < estudiantes; i++)
+            {
+                printf("\nEstudiante %d:\n", i + 1);
+                printf("Nombre: ");
+                puts(alumnos[i].nombre);
+
+                printf("Direccion: ");
+                puts(alumnos[i].direccion);
+
+                printf("Materia: ");
+                puts(alumnos[i].materia);
+
+                printf("Matricula: %d\n", alumnos[i].matricula);
+                printf("Nota: %.2f\n", alumnos[i].nota);
+            }
+            break;
+
        
         }
     } while (opcion != 3);
