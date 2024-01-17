@@ -27,7 +27,7 @@ int main()
         switch (opcion)
         {
         case 1:
-            
+            if (estudiantes < 20)
             {
                 printf("\nDatos del estudiante %d:\n", estudiantes + 1);
 
@@ -50,9 +50,13 @@ int main()
 
                 printf("Estudiante ingresado exitosamente.\n");
             }
-        
+            else
+            {
+                printf("Limite de estudiantes alcanzado. No es posible ingresar mas.\n");
+            }
+            break;
 
-      
+       
         }
     } while (opcion != 3);
 
