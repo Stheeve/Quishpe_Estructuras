@@ -75,7 +75,12 @@ int main()
             }
             break;
 
-       
+        case 3:
+            printf("Eligio la opcion salir");
+            break;
+
+        default:
+            printf("Opcion no valida. Intente nuevamente.\n");
         }
     } while (opcion != 3);
 
